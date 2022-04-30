@@ -1,0 +1,8 @@
+version: 1.0.0
+files:
+  - url: Sewer-Client-setup-1.0.0.exe
+    sha512: M64TI0mSIYG2ELm2ww5v8EBZktEgPqljqrb6qC+bUpy2xUg7B0T6EPd6Ss+htn9mp0PVoD5pRisav0Jy9R+W0A==
+    size: 205578419
+path: Sewer-Client-setup-1.0.0.exe
+sha512: M64TI0mSIYG2ELm2ww5v8EBZktEgPqljqrb6qC+bUpy2xUg7B0T6EPd6Ss+htn9mp0PVoD5pRisav0Jy9R+W0A==
+releaseDate: '2022-04-30T17:21:26.455Z'
