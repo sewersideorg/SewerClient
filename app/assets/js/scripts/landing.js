@@ -58,14 +58,10 @@ function setLaunchDetails(details){
  * @param {number} max The total size.
  * @param {number|string} percent Optional. The percentage to display on the progress label.
  */
-function setLaunchPercentage(value, max, percent = ((value/max)*100)){
+ function setLaunchPercentage(value, max, percent = ((value/max)*100)){
     launch_progress.setAttribute('max', max)
     launch_progress.setAttribute('value', value)
-    if (percent === null) {
-        launch_progress_label.innerHTML = ""
-    } else {
-        launch_progress_label.innerHTML = percent + '%'
-    }
+    launch_progress_label.innerHTML = percent + '%'
 }
 
 /**
@@ -630,9 +626,8 @@ function dlAsync(login = true){
                 const gameStateChange = function(data){
                     data = data.trim()
                     if(SERVER_JOINED_REGEX.test(data)){
-                        DiscordWrapper.updateDetails('Exploring the world...')
-                    } else if(GAME_JOINED_REGEX.test(data)){
-                        DiscordWrapper.updateDetails('Playing Minecraft...')
+                        DiscordWrapper.updateDetails('Exploring the World!')
+                        DiscordWrapper.resetTime()
                     }
                 }
 
